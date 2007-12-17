@@ -10,7 +10,6 @@ Source: %{name}-%{version}.tar.bz2
 Patch: %{name}-install.patch
 URL: http://www.xs4all.nl/~rsmith/software/
 Group: File tools
-BuildRoot: %{_tmppath}/%{name}-buildroot 
 BuildRequires: X11-devel
 License: GPL
 

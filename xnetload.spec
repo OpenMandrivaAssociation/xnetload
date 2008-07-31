@@ -1,6 +1,6 @@
 %define name xnetload
 %define version 1.11.3
-%define release %mkrel 3 
+%define release %mkrel 5 
 
 Name: %{name} 
 Summary: A program to display load on network device

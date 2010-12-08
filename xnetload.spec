@@ -1,7 +1,7 @@
 Name: xnetload
 Summary: A program to display load on network device
 Version: 1.11.3
-Release: %mkrel 7
+Release: %mkrel 8
 Source: %{name}-%{version}.tar.bz2
 Patch: %{name}-install.patch
 URL: http://www.xs4all.nl/~rsmith/software/

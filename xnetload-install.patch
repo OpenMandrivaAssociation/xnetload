@@ -1,0 +1,48 @@
+diff -BrauN xnetload-1.11.3/Makefile xnetload-1.11.3.new/Makefile
+--- xnetload-1.11.3/Makefile	2002-10-03 18:04:29.000000000 +0200
++++ xnetload-1.11.3.new/Makefile	2005-02-18 10:17:32.959736580 +0100
+@@ -4,7 +4,7 @@
+ # If make complains about a missing file, run 'make depend' first
+ 
+ # Define the C compiler to be used, usually gcc.
+-CC = gcc
++CC := gcc
+ 
+ # Choose an appropriate CFLAGS and LFLAGS
+ 
+@@ -25,10 +25,10 @@
+ LIBS = -lXaw -lXmu -lXt -lX11 -lm
+ 
+ # Location where to install the binary.
+-BINDIR = /usr/local/bin
++BINDIR := /usr/local/bin
+ 
+ # Location where to install the manual-page.
+-MANDIR = /usr/local/man/man1
++MANDIR := /usr/local/man/man1
+ 
+ ##### Maintainer stuff goes here:
+ 
+@@ -86,10 +86,6 @@
+ 
+ # Install the program and manual page. You should be root to do this.
+ install: $(BASENAME)
+-	@if [ `id -u` != 0 ]; then \
+-		echo "You must be root to install the program!"; \
+-		exit 1; \
+-	fi
+ 	install -m 755 $(BASENAME) $(BINDIR)
+ 	if [ -e $(BASENAME).1 ]; then \
+ 		install -m 644 $(BASENAME).1 $(MANDIR); \
+--- xnetload-1.11.3.orig/Makefile       2005-05-13 18:59:02.953006816 +0200
++++ xnetload-1.11.3/Makefile    2005-05-13 18:59:39.854396952 +0200
+@@ -14,7 +14,7 @@
+
+ # The next two lines are for building an optimized and stripped program.
+ CFLAGS = -pipe -O2 -Wall -DNDEBUG -I/usr/X11R6/include
+-LFLAGS = -s -pipe -L/usr/X11R6/lib
++LFLAGS = -s -pipe -L/usr/X11R6/lib -L/usr/X11R6/lib64
+
+ # These three lines are for building Athlon optimized programs on my system.
+ #CC=gcc-3.1
+

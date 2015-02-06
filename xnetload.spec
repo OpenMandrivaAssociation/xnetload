@@ -1,7 +1,7 @@
 Summary:	A program to display load on network device
 Name:		xnetload
 Version:	1.11.3
-Release:	9
+Release:	10
 License:	GPLv2+
 Group:		File tools
 Url:		http://www.xs4all.nl/~rsmith/software/

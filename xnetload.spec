@@ -4,7 +4,7 @@ Version:	1.11.3
 Release:	10
 License:	GPLv2+
 Group:		File tools
-Url:		http://www.xs4all.nl/~rsmith/software/
+Url:		https://www.xs4all.nl/~rsmith/software/
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		xnetload-1.11.3-flags.patch
 BuildRequires:	pkgconfig(x11)

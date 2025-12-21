@@ -7,6 +7,7 @@ Group:		File tools
 Url:		https://www.xs4all.nl/~rsmith/software/
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		xnetload-1.11.3-flags.patch
+BuildRequires:	make
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xaw7)
 BuildRequires:	pkgconfig(xmu)
